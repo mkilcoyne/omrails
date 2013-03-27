@@ -1,10 +1,23 @@
+<% if user_signed_in? %> 
+
+	<h1>Welcome to Tweeseat. <small> Fill seats quickly. </small> </h1>
+
+<% else %> 
+
 <div class="hero-unit">
-	<h1>Welcome to Awesometown!</h1>
-	<p>
+	<div class="page-header">
+	<header>
+	<h1>Welcome to Tweeseat. <small> Fill seats quickly. </small> </h1> 
+
+		<p>
 		This is where Michael Kilcoyne resides. It's a sad, dark, dank and empty place. But don't let that discourage you! Explore! OH WAIT YOU CAN'T CUZ THERE ARE NO OTHER PAGES.
 		<%= link_to "Mike Kilcoyne", "http://mikekilcoyne.com" %> 
-	</p>
+		</p>
 			<p>
-			<%= link_to "Danger Will Robinson, Danger!", "#" , class: "btn btn-primary btl-mini"%> 
+			<%= link_to "Danger Will Robinson, Danger!", new_user_registration_path, class: "btn btn-primary , btl-large"%> 
 			</p> 
+	</header> 
+	
 </div> 
+
+<% end %> 
